@@ -4,21 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Персональна сторінка</title>
+
     <style>
         h1 {
             text-align: center;
             font-size: 24px;
         }
 
-        p {
+        .about {
             font-size: 120%;
         }
+
         .biography:link {
-            color: red;
+            color: blue;
         }
 
         .biography:visited {
-            color: darkred;
+            color: purple;
         }
 
         .nowadays:link {
@@ -26,11 +28,11 @@
         }
 
         .nowadays:visited {
-            color: darkgreen;
+            color: orange;
         }
 
         .friends:link {
-            color: orange;
+            color: red;
         }
 
         .friends:visited {
@@ -38,20 +40,18 @@
         }
 
         .gallery:link {
-            color: blue;
+            color: darkcyan;
         }
 
         .gallery:visited {
-            color: purple;
+            color: darkmagenta;
         }
     </style>
 </head>
 <body>
-    <h1>Персональна сторінка Кушнірук Вікторії </h1>
+    <h1>Персональна сторінка Кушнірук Вікторії</h1>
 
-    <p>
-
-    <p>
+    <p class="about">
         Мене звати Вікторія, я навчаюся в університеті за спеціальністю
         «Комп'ютерні науки» та цікавлюся сучасними технологіями.
         Під час навчання я вивчаю різні мови програмування,
@@ -62,11 +62,13 @@
         у сфері інформаційних технологій.
     </p>
 
-    </p>
 
-    <a class="biography" href="biography.html">Автобіографія</a>
-    <a class="nowadays" href="nowadays.html">Сьогодення</a>
-    <a class="friends" href="friends.html">Друзі</a>
-    <a class="gallery" href="gallery.html">Галерея</a>
+    <ul>
+        <li><a class="biography" href="biography.html">Автобіографія</a></li>
+        <li><a class="nowadays" href="nowadays.html">Сьогодення</a></li>
+        <li><a class="friends" href="friends.html">Друзі</a></li>
+        <li><a class="gallery" href="gallery.html">Галерея</a></li>
+    </ul>
+
 </body>
 </html>

@@ -1,43 +1,44 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <title>Автобіографія</title>
+
     <style>
         h1 {
             text-align: center;
             font-size: 22px;
         }
 
-        a[href="index.html"] {
+        .back {
             font-style: italic;
         }
 
         h3 {
             text-align: center;
         }
-        .button:link,
-        .button:visited {
+
+        .menu:link,
+        .menu:visited {
             display: inline-block;
             width: 180px;
             padding: 10px;
             background-color: blue;
             color: white;
-            border: 2px solid darkblue;
+            border: 2px solid black;
             text-align: center;
-            text-decoration: none;
         }
 
-        .button:hover {
+        .menu:hover {
             background-color: magenta;
             color: black;
         }
 
-        .button:active {
+        .menu:active {
             background-color: yellow;
             color: black;
         }
+
         article {
             font-size: 120%;
         }
@@ -45,50 +46,64 @@
             article h2 {
                 font-size: 120%;
             }
-            article:nth-of-type(1) p {
-                background-color: lightblue;
-                color: darkblue;
+
+            article p {
+                padding: 10px;
             }
 
+
+            article:nth-of-type(1) p {
+                background-color: skyblue;
+                color: black;
+            }
+
+
             article:nth-of-type(2) p {
-                background-color: lightyellow;
+                background-color: lightblue;
                 color: black;
             }
 
             article:nth-of-type(3) p {
                 background-color: lightgreen;
-                color: darkgreen;
+                color: black;
             }
 
             article:nth-of-type(4) p {
                 background-color: lavender;
-                color: darkslateblue;
+                color: black;
             }
 
             article:nth-of-type(5) p {
-                background-color: mistyrose;
-                color: darkred;
+                background-color: lightpink;
+                color: black;
             }
-            article a {
+
+            article a[href="#contents"] {
                 font-weight: bold;
             }
+
         .up {
             text-transform: uppercase;
         }
     </style>
+
 </head>
+
 <body>
     <h1 id="top">Автобіографія Кушнірук Вікторії </h1>
 
-    <a href="index.html">Назад на головну</a>
+    <a class="back" href="index.html">Назад на головну</a>
 
     <h3 id="contents">Зміст</h3>
 
-    <p><a class="button" href="#basic">Базова інформація</a></p>
-    <p><a class="button" href="#childhood">Дитинство</a></p>
-    <p><a class="button" href="#school">Шкільні роки</a></p>
-    <p><a class="button" href="#outside">Поза школою</a></p>
-    <p><a class="button" href="#university">Університет</a></p>
+
+    <p><a class="menu" href="#basic">Базова інформація</a></p>
+    <p><a class="menu" href="#childhood">Дитинство</a></p>
+    <p><a class="menu" href="#school">Шкільні роки</a></p>
+    <p><a class="menu" href="#outside">Поза школою</a></p>
+    <p><a class="menu" href="#university">Університет</a></p>
+
+
     <article>
         <h2 id="basic">Базова інформація</h2>
 
@@ -210,8 +225,12 @@
             свої знання у професійній діяльності.
         </p>
 
-        <a href="#contents">до змісту</a>
+
+    <a href="#contents">до змісту</a>
     </article>
-    <p><a href="#top" class="up">Уверх</a></p>
+
+    <hr>
+    <a class="up" href="#top">Уверх</a>
+
 </body>
 </html>
